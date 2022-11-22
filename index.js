@@ -1,6 +1,6 @@
 
-function scuberGreetingForFeet(ride){
-  // Write your code here!
+const scuberGreetingForFeet = ride => {
+
   if (ride <= 400) {
     return ('This one is on me!')
   } else if (ride > 2000 && ride < 2500) {
@@ -8,15 +8,17 @@ function scuberGreetingForFeet(ride){
   } else if (ride > 2500) {
     return ('No can do.')
   }
+
  }
+ 
  scuberGreetingForFeet()
-function ternaryCheckCity(city){
-  // Write your code here!
-  return (city === "NYC" ? "Ok, sounds good." : "No go.");
-}
-ternaryCheckCity()
-function switchOnCharmFromTip(tip){
-  // Write your code here!
+
+const ternaryCheckCity = city => city === "NYC" ? ("Ok, sounds good.") : ("No go.")
+
+  ternaryCheckCity()
+
+const switchOnCharmFromTip = tip => {
+
   switch (tip) {
     case 'generous':
       return ("Thank you so much.")
@@ -28,5 +30,7 @@ function switchOnCharmFromTip(tip){
       return("Bye.")
       break;
   }
+
 }
+
 switchOnCharmFromTip()
